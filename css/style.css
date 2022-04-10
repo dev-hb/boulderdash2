@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #74b9ff;
+}
+
+.mainmenu {
+    margin-top: 20vh;
+    text-align: center;
+    align-self: center;
+    display: block;
+    flex-direction: column;
+}
+.menu span {
+    display: block;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 22px;
+    transition: all .2s ease;
+}
+
+.menu span:hover {
+    transition: all .2s ease;
+    font-size: 28px;
+}
+
+.bdcontainer {
+    display: none;
+    flex-direction: column;
+    margin: auto;
+}
+
+#espacejeu > div {
+    display: flex;
+    background-color: black;
+    width: 1280px;
+}
+
+#espacejeu > div > div {
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#gamemenu {
+    width: 1280px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #234;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.bt {
+    opacity: .5;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.bt:hover {
+    opacity: 1;
+    transition: all .2s ease;
+}
+
+.sscreen {
+    width: 1280px;
+    height: 710px;
+    background: #000;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.sscreen .btnnext {
+    border: 1px solid #fff;
+    width: 130px;
+    align-self: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+.sscreen .btnnext:hover {
+    background-color: #fff;
+    color: #000;
+    transition: all .2s ease;
+}
+
+.vigobj {
+    height: 10px;
+    width: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+}
+
+.organiseur { display: none; }
+
+.organiseur .header {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#gohome {
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #000;
+    width: 130px;
+    align-self: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+#gohome:hover {
+    background-color: #000;
+    transition: all .2s ease;
+    color: #fff;
+}
+
+.block
+{
+    display: flex;
+    padding: 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#file 
+{
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    white-space: nowrap;
+    width: 1px;
+}
+
+#file + label {
+    font-size: 16px;
+    cursor: pointer;
+    color: #5a88ca;
+}
+
+#list {
+    width: fit-content;
+    text-align: center;
+}
+
+.up, .down, .del {
+    cursor: pointer;
+    color: #000;
+    text-decoration: underline;
+}
+
+.lvl {
+    position: relative;
+    width: 800px;
+    margin-top: 50px;
+    padding: 20px;
+    text-align:center;
+}
+
+.preview {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: 160px;
+    border: none;
+    background-color:black;
+    margin: auto;
+    margin-top: 10px;
+}

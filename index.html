@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Boulder Dash</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="mainmenu" id="mainmenu">
+		<div class="title">
+			<img src="images/boulderdash.jpeg" height="200">
+		</div>
+		<br><br>
+		<hr>
+		<div class="menu">
+			<span id="reprendre" >Reprendre la partie</span>
+			<span id="newgame">Nouvelle partie</span>
+			<span id="organiser">Organiser les niveaux</span>
+			<span class="fileinput">
+				<input type="file" id="file" accept=".txt"> <span onclick="document.getElementById('file').click()">Ajouter un niveau</span>
+			</span>
+		</div>
+	</div>
+
+	<div class="bdcontainer" id="bdcontainer">
+		<div id="gamemenu">
+			<div id="level"></div>
+			<div style="display: flex;align-items: center;"><img src="images/gem.png" width="30">&nbsp; <span id="gems"></span></div>
+			<div style="display: flex;align-items: center;"><img src="images/step.png" width="30">&nbsp; <span id="moves"></span></div>
+			<div><a id="recommencer" class="bt">Recommencer</a></div>
+			<div id="pause" class="bt">Pause</div>
+		</div>
+		
+		<div id="espacejeu"></div>
+
+		<div class="sscreen" id="redo">
+			<h1>Niveau perdus</h1>
+			<h4>Vous êtes mort!</h4>
+			<span class="btnnext" id="goredo">Recommencer</span>
+		</div>
+
+		<div class="sscreen" id="nextlevel">
+			<h1>Niveau réussi</h1>
+			<h4>Vous avez terminé le niveau <span id="finishlevel"></span></h4>
+			<span class="btnnext" id="gonext">Suivant</span>
+		</div>
+		
+		<div class="sscreen" id="over">
+			<h1>Game Over</h1>
+			<h4>Vous avez terminé le jeu</h4>
+			<span class="btnnext" id="gopause">Accueil</span>
+		</div>
+	</div>
+
+	<div class="organiseur" id="organiseur">
+		<div class="header">
+			<a id="gohome">Retour</a>
+		</div>
+		<div class="block">
+			<div id="list">
+			</div>
+		</div>
+	</div>
+
+	
+
+	<script type="module" src="index.js"></script>
+</body>
+</html>
